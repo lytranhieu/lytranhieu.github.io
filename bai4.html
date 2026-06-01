@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bài 5: Công cụ hợp tác trực tuyến - Lý Trần Hiếu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		body { background-color: #f4f4f4; }
+		.project-detail-container {
+			background-color: #fff;
+			padding: 40px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			border-radius: 8px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+		}
+		.btn-back { margin-bottom: 20px; display: inline-block; }
+		
+		/* Fix font chữ tiếng Việt */
+		h1, h2, h3, h4, h5, h6, th, p, li {
+			font-family: 'Quicksand', Arial, sans-serif !important;
+		}
+		h1, h2, h3, h4, th { font-weight: 700; }
+		
+		img.screenshot {
+			display: block; width: 100%; max-width: 800px; margin: 20px auto 30px; 
+			border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #eee;
+		}
+		
+		.challenge-box {
+			background-color: #fff;
+			border-left: 4px solid #d9534f;
+			border-radius: 5px;
+			padding: 20px;
+			margin-bottom: 25px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+		}
+		.challenge-box h5 {
+			color: #d9534f;
+			font-weight: bold;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 project-detail-container">
+				
+				<a href="index.html#work" class="btn btn-primary btn-back">⬅ Quay về trang dự án</a>
+
+				<h2 style="color: #2c98f0; text-align: center; margin-bottom: 30px; text-transform: uppercase;">SỬ DỤNG CÔNG CỤ HỢP TÁC TRỰC TUYẾN CHO DỰ ÁN NHÓM</h2>
+				<hr>
+
+				<div class="project-content" style="font-size: 16px; line-height: 1.8; color: #333;">
+					
+					<div style="background: #e9ecef; padding: 20px; border-radius: 8px; border-left: 5px solid #2c98f0; margin-bottom: 40px;">
+						<p style="margin: 0;"><strong>Dự án:</strong> Thiết kế một game trên mobile</p>
+						<p style="margin: 0;"><strong>Vai trò trong nhóm:</strong> Lập trình viên (Coder)</p>
+					</div>
+
+					<h3 style="color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px;">I. LỰA CHỌN VÀ THIẾT LẬP CÔNG CỤ HỢP TÁC</h3>
+					<p>Trong quá trình thực hiện dự án game, khối lượng mã nguồn (source code), logic xử lý va chạm và việc tích hợp tài nguyên (ảnh, âm thanh) đòi hỏi sự chính xác tuyệt đối. Do đó, tôi đã thiết lập và sử dụng đồng bộ hệ sinh thái 4 công cụ thuộc các nhóm khác nhau, đồng thời tối ưu hóa không gian làm việc bằng các tiện ích tự động hóa:</p>
+					<ul style="margin-bottom: 40px;">
+						<li><strong>Quản lý dự án (Trello):</strong> Phân bổ luồng công việc lập trình, theo dõi tiến độ fix bug. Tôi đã tích hợp (integrate) tự động Webhook từ Trello sang Discord để hệ thống báo cáo khi có bản Build mới.</li>
+						<li><strong>Soạn thảo cộng tác (Google Docs):</strong> Đồng biên soạn tài liệu Game Design Document (GDD), đặc tả kỹ thuật (Technical Specs).</li>
+						<li><strong>Giao tiếp & Họp trực tuyến (Discord & Google Meet):</strong> Test game trực tiếp, trao đổi tiến độ và yêu cầu tài nguyên hàng ngày.</li>
+						<li><strong>Lưu trữ & Chia sẻ (Google Drive):</strong> Quản lý Source code và file chạy thử bằng hệ thống thư mục đa cấp, thiết lập phân quyền truy cập (view/edit) bảo mật.</li>
+					</ul>
+
+					<h3 style="color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px;">II. QUÁ TRÌNH THỰC HIỆN VÀ MINH CHỨNG HOẠT ĐỘNG</h3>
+					
+					<h4 style="color: #2c98f0; margin-top: 30px;">1. Tự quản lý danh sách nhiệm vụ được giao trên công cụ quản lý (Trên Trello)</h4>
+					
+					<h5 style="font-weight: bold;">1.1. Theo dõi luồng công việc và cập nhật tiến độ</h5>
+					<p><strong>Hoạt động:</strong> Tôi tham gia xây dựng bảng Kanban cho nhóm, phân chia luồng công việc thành các cột: Hôm nay -> Tuần này -> Sau này -> Review -> Done. Tôi duy trì việc cập nhật trạng thái thẻ tác vụ, kéo thả công việc và check checklist thường xuyên (trung bình 4-5 lần/tuần, vượt mức yêu cầu 3 lần/tuần).</p>
+					<p><strong>Minh chứng:</strong></p>
+					<img src="media4/image1.png" alt="Bảng Kanban Trello" class="screenshot">
+
+					<h5 style="font-weight: bold;">1.2. Tối ưu hóa thẻ nhiệm vụ bằng Label</h5>
+					<p><strong>Hoạt động:</strong> Bên trong mỗi thẻ nhiệm vụ do tôi phụ trách (VD: "Thiết lập môi trường"), tôi thiết lập hệ thống Label (Nhãn màu) để phân loại: Bug (Đỏ), Feature (Xanh), Optimization (Vàng). Mỗi thẻ đều có Checklist chi tiết (Setup biến -> Viết logic -> Test -> Merge) và đính kèm Deadline sát sao.</p>
+					<p><strong>Minh chứng:</strong></p>
+					<img src="media4/image2.png" alt="Nhãn Label trên Trello" class="screenshot">
+
+					<h4 style="color: #2c98f0; margin-top: 30px;">2. Lịch sử chỉnh sửa, đóng góp nội dung trực tiếp trên tài liệu cộng tác (Trên Google Docs)</h4>
+					
+					<h5 style="font-weight: bold;">2.1. Đóng góp nội dung cốt lõi</h5>
+					<p><strong>Hoạt động:</strong> Tôi trực tiếp đảm nhận biên soạn phần "Game Mechanics (Cơ chế Game)" và "Mô tả thuật toán xử lý va chạm" trong file GDD chung. Đảm bảo team đồ họa hiểu rõ kích thước asset cần vẽ để khớp với code.</p>
+
+					<h5 style="font-weight: bold; margin-top: 20px;">2.2. Chủ động tương tác đa chiều</h5>
+					<p><strong>Hoạt động:</strong> Tôi duy trì tần suất chủ động tương tác, hỗ trợ thành viên khác trên 12 lượt/tuần. Tôi dùng tính năng "Comment" để tag (@) trực tiếp các bạn 2D Artist yêu cầu xuất lại file ảnh đúng tỷ lệ, hoặc dùng "Suggesting" để làm rõ các luồng logic trong kịch bản game.</p>
+					<p><strong>Minh chứng:</strong></p>
+					<img src="media4/image3.png" alt="Nội dung file GDD trên Google Docs" class="screenshot">
+					<img src="media4/image4.png" alt="Tương tác tính năng Comment" class="screenshot">
+
+					<h4 style="color: #2c98f0; margin-top: 30px;">3. Tương tác, thảo luận chủ động với các thành viên khác trên công cụ giao tiếp (Trên Discord & Meet)</h4>
+					
+					<h5 style="font-weight: bold;">3.1. Báo cáo tiến độ và chia sẻ bản Build hàng ngày</h5>
+					<p><strong>Hoạt động:</strong> Để đồng bộ hóa hệ thống, tôi cấu hình bot tự động trên Discord báo cáo mỗi khi tôi hoàn thành việc merge code trên Trello hoặc có thắc mắc cá nhân.</p>
+					<p><strong>Minh chứng:</strong></p>
+					<img src="media4/image5.png" alt="Báo cáo tiến độ trên Discord" class="screenshot">
+
+					<h5 style="font-weight: bold;">3.2. Tổ chức họp Debug trực tuyến</h5>
+					<p><strong>Hoạt động:</strong> Khi gặp các Bug khó hoặc sai lệch tọa độ hiển thị hình ảnh, tôi chủ động mở phòng Google Meet/Discord Voice, dùng Share Screen màn hình trình biên dịch (IDE) hoặc Game Engine để chạy debug trực tiếp, giúp nhóm hình dung rõ nguyên nhân lỗi.</p>
+					<p><strong>Minh chứng:</strong></p>
+					<img src="media4/image6.png" alt="Share screen debug trên Google Meet" class="screenshot">
+
+					<h4 style="color: #2c98f0; margin-top: 30px;">4. Tổ chức và lưu trữ các tệp tin cá nhân phụ trách một cách khoa học (Trên Google Drive)</h4>
+					
+					<h5 style="font-weight: bold;">4.1. Xây dựng cây thư mục logic nhiều cấp</h5>
+					<p><strong>Hoạt động:</strong> Để mã nguồn không bị lộn xộn với file thiết kế, tôi đã thiết kế cây thư mục phân cấp logic trên Drive: Thư mục gốc chia ra 01_Game_Documents, 02_Assets_Đồ_Họa, 03_Source_Code và 04_Playable_Builds.</p>
+					<p><strong>Minh chứng:</strong></p>
+					<img src="media4/image7.png" alt="Cây thư mục Google Drive" class="screenshot">
+
+					<h5 style="font-weight: bold;">4.2. Quản lý 100% tên tệp và bảo mật phân quyền</h5>
+					<p><strong>Hoạt động:</strong> 100% tệp tin mã nguồn đều được đặt tên đúng quy chuẩn: [Ngày]_[Phân_Loại]_[Tên_Script]_V[Số phiên bản] (VD: 20260531_Script_PlayerController_V2.c). Về phân quyền (Permission): với thư mục 03_Source_Code, chỉ coder chúng tôi giữ quyền "Editor", các bạn họa sĩ chỉ được cấp quyền "Viewer" để tránh việc vô tình xóa nhầm hoặc làm hỏng cấu trúc mã nguồn.</p>
+					<p><strong>Minh chứng:</strong></p>
+					<img src="media4/image8.png" alt="Quản lý quy chuẩn tên file" class="screenshot">
+					<img src="media4/image9.png" alt="Phân quyền bảo mật file" class="screenshot">
+
+
+					<h3 style="color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px;">III. ĐÁNH GIÁ, PHÂN TÍCH THÁCH THỨC VÀ CÁCH GIẢI QUYẾT</h3>
+					<p style="margin-bottom: 30px;">Quá trình lập trình trong một nhóm làm game mang lại nhiều bài học lớn về tư duy hệ thống. Tuy nhiên, nhóm đã đối mặt với 3 thách thức lớn và tôi đã áp dụng các giải pháp sau:</p>
+
+					<div class="challenge-box">
+						<h5>Thách thức 1: Xung đột khi tích hợp tài nguyên (Asset Integration).</h5>
+						<p><strong>Vấn đề:</strong> Các Artist thường lưu đè lên file ảnh cũ với tên mới hoặc định dạng khác, khiến script load ảnh trong code của tôi bị báo lỗi "File Not Found" liên tục.</p>
+						<p><strong>Giải pháp:</strong> Tôi thiết lập quy định sử dụng tính năng "Manage Versions" (Quản lý phiên bản) của Google Drive đối với thư mục 02_Assets_Đồ_Họa. Họa sĩ sẽ update version đè lên file cũ để giữ nguyên link tải và tên file, giúp mã nguồn tự động nhận diện bản cập nhật mà không cần tôi phải sửa code thủ công.</p>
+					</div>
+
+					<div class="challenge-box">
+						<h5>Thách thức 2: Quản lý lỗi (Bug Tracking) kém hiệu quả do chat lộn xộn.</h5>
+						<p><strong>Vấn đề:</strong> Khi chơi thử bản Build, các thành viên thường nhắn tin báo lỗi rải rác trên Discord, khiến tôi bị trôi tin nhắn và quên fix một số bug quan trọng.</p>
+						<p><strong>Giải pháp:</strong> Ràng buộc quy định Bug Tracking: Bất kỳ lỗi nào được phát hiện đều phải tạo thành một thẻ Card màu đỏ (Label: Bug) trên Trello, có mô tả cách tái hiện lỗi và đính kèm ảnh chụp màn hình. Tôi chỉ ưu tiên fix lỗi có trên bảng Trello.</p>
+					</div>
+
+					<div class="challenge-box">
+						<h5>Thách thức 3: Trễ nải trong khâu kiểm thử do lệch giờ sinh hoạt.</h5>
+						<p><strong>Vấn đề:</strong> Tôi thường code xong và xuất bản Build game vào đêm khuya, nhưng các thành viên khác không biết để vào test, làm chậm tiến độ phản hồi của ngày hôm sau.</p>
+						<p><strong>Giải pháp:</strong> Sử dụng tính năng Webhook kết nối Trello và Discord. Ngay khi tôi chuyển thẻ task "Xuất Build V1.2" sang cột "Done", hệ thống tự động bắn một thông báo âm thanh vào kênh #build-testing, tag tên toàn bộ đội test (@everyone) để sáng hôm sau họ mở máy là thấy ngay nhiệm vụ.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

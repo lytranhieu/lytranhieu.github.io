@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bài 3: Tìm kiếm và đánh giá thông tin - Lý Trần Hiếu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		body { background-color: #f4f4f4; }
+		.project-detail-container {
+			background-color: #fff;
+			padding: 40px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			border-radius: 8px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+		}
+		.btn-back { margin-bottom: 20px; display: inline-block; }
+		.project-content img { display: block; max-width: 100%; height: auto; margin: 20px 0; border-radius: 5px; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+		
+		/* Fix font chữ tiếng Việt */
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Quicksand', Arial, sans-serif !important;
+			font-weight: 700;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 project-detail-container">
+				
+				<a href="index.html#work" class="btn btn-primary btn-back">⬅ Quay về trang dự án</a>
+
+				<h2 style="color: #2c98f0; text-align: center; margin-bottom: 30px; text-transform: uppercase;">Viết Prompt hiệu quả cho các tác vụ học tập</h2>
+				<hr>
+
+				<div class="project-content" style="font-size: 16px; line-height: 1.8; color: #333;">
+
+                    <h3 style="color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">1. Lựa chọn và phân tích tác vụ học tập</h3>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #2c98f0;">Tác vụ 1: Tóm tắt tài liệu Giải tích 2 (Tích phân 3 lớp)</h4>
+                        <ul>
+                            <li><strong>Mục tiêu:</strong> Chuyển hóa các công thức đổi biến phức tạp thành mô hình trực quan, nắm rõ bản chất hình học và cách ứng dụng vào các bài toán vật lý (tính khối lượng, trọng tâm).</li>
+                            <li><strong>Thách thức:</strong> Sinh viên rất dễ bị ngợp bởi hệ thống công thức và cận tích phân dày đặc. Phải ép AI đóng vai trò người hướng dẫn trực quan hóa không gian toán học, liên hệ trực tiếp với tư duy kỹ thuật thay vì liệt kê lý thuyết.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #2c98f0;">Tác vụ 2: Giải thích khái niệm Pthread trong Lập trình hệ thống</h4>
+                        <ul>
+                            <li><strong>Mục tiêu:</strong> Thấu hiểu cơ chế vận hành của đa luồng (multithreading) bên dưới tầng hệ điều hành (như Linux/Ubuntu), quản lý bộ nhớ chung và đồng bộ hóa.</li>
+                            <li><strong>Thách thức:</strong> Khái niệm trừu tượng, dễ nhầm lẫn với đa tiến trình. Lỗi Race Condition rất khó hình dung. Buộc AI áp dụng tư duy từng bước (Chain-of-Thought), sử dụng ẩn dụ thực tế và cung cấp mã nguồn C minh họa.</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #2c98f0;">Tác vụ 3: Tạo bộ câu hỏi ôn tập Tư tưởng Hồ Chí Minh</h4>
+                        <ul>
+                            <li><strong>Mục tiêu:</strong> Kích hoạt cơ chế chủ động gợi nhớ kiến thức (Active Recall) để chuẩn bị thi, rèn luyện tư duy phản biện.</li>
+                            <li><strong>Thách thức:</strong> Các bộ câu hỏi AI tạo thường quá dễ. Cần định hướng AI tạo ra hệ thống câu hỏi mang tính chất vấn logic, cài cắm các phương án nhiễu có tính đánh lừa cao và bắt buộc giải thích sâu.</li>
+                        </ul>
+                    </div>
+
+                    <h3 style="color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">2. Xây dựng các phiên bản Prompt</h3>
+                    
+                    <p>Để giải quyết những vấn đề trên, các phiên bản prompt được thiết kế tăng dần về độ phức tạp và hiệu quả:</p>
+
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                        <h4 style="color: #333; margin-top: 0;">Tác vụ 1: Giải tích 2</h4>
+                        <p><strong>Cơ bản:</strong> <em>"Tóm tắt kiến thức về tích phân 3 lớp trong môn giải tích 2."</em></p>
+                        <p><strong>Cải tiến:</strong> <em>"Hãy tóm tắt khái niệm tích phân 3 lớp. Chia bài tóm tắt thành: Định nghĩa, công thức đổi biến trong 3 hệ tọa độ (Đề-các, Trụ, Cầu), và ví dụ ứng dụng."</em></p>
+                        <p><strong>Nâng cao:</strong> <em>"Đóng vai một Giảng viên xuất sắc tại UET chuyên dạy sinh viên Giải tích. Hãy tóm tắt chuyên đề 'Tích phân 3 lớp'. Yêu cầu: Bắt đầu bằng một phép ẩn dụ trực quan về việc cắt nhỏ một vật thể không gian. Lập bảng so sánh cách đổi biến (dxdydz) và định thức Jacobian tương ứng trong 3 hệ tọa độ: Đề-các, Trụ, và Cầu."</em></p>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                        <h4 style="color: #333; margin-top: 0;">Tác vụ 2: Lập trình hệ thống</h4>
+                        <p><strong>Cơ bản:</strong> <em>"Khái niệm pthread trong lập trình hệ thống là gì? Cho ví dụ."</em></p>
+                        <p><strong>Cải tiến:</strong> <em>"Giải thích khái niệm POSIX threads (pthread) trong hệ điều hành Linux. So sánh nó với Process. Viết một đoạn code C cơ bản tạo thread và giải thích cách nó hoạt động."</em></p>
+                        <p><strong>Nâng cao:</strong> <em>"Đóng vai một Senior Systems Engineer đang hướng dẫn sinh viên dùng Ubuntu. Hãy giải thích khái niệm Pthread. Áp dụng quy trình tư duy (Step-by-step): Bước 1: Ẩn dụ thực tế... Bước 2: Viết code C... Bước 3: Chỉ ra lỗi nguy hiểm (Race Condition) và cách dùng Mutex. Định dạng code rõ ràng."</em></p>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                        <h4 style="color: #333; margin-top: 0;">Tác vụ 3: Tư tưởng Hồ Chí Minh</h4>
+                        <p><strong>Cơ bản:</strong> <em>"Tạo cho tôi 5 câu hỏi trắc nghiệm ôn thi Tư tưởng Hồ Chí Minh."</em></p>
+                        <p><strong>Cấu trúc:</strong> <em>"Tạo bộ 5 câu hỏi trắc nghiệm... về chủ đề Đại đoàn kết dân tộc. Có 4 đáp án A, B, C, D và cung cấp đáp án chi tiết ở cuối."</em></p>
+                        <p><strong>Nâng cao:</strong> <em>"Đóng vai một người ra đề thi khó tính. Hãy tạo 3 câu hỏi trắc nghiệm phân tích tình huống mức độ Khó... BẮT BUỘC cung cấp phần 'Giải thích sâu' cho mỗi câu, chỉ rõ TẠI SAO đúng dựa trên cốt lõi tư tưởng, và TẠI SAO các phương án nhiễu sai bản chất."</em></p>
+                    </div>
+
+                    <h3 style="color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">3. Thử nghiệm và so sánh kết quả</h3>
+
+                    <h4 style="color: #2c98f0; margin-top: 30px;">Tác vụ 1: Giải tích 2</h4>
+                    <p><strong>Prompt Cơ bản</strong></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image1.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image2.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+                    
+                    <img src="media1/image3.png" alt="Kết quả Prompt Cải tiến Tác vụ 1" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    <p><strong>Prompt Cải tiến</strong></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image4.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image5.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+                    
+                    <img src="media1/image6.png" alt="Kết quả Prompt Cải tiến Tác vụ 1" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+
+                    <p><strong>Prompt Nâng cao</strong></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image9.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/Screenshot 2026-05-30 095222.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+
+                    <h5 style="color: #333; font-weight: bold; margin-top: 10px; margin-bottom: 15px; text-transform: uppercase;">Bảng so sánh kết quả:</h5>
+                    <div class="table-responsive" style="margin-top: 20px; margin-bottom: 40px;">
+                        <table class="table table-bordered table-striped" style="background: #fff;">
+                            <thead style="background-color: #2c98f0; color: #fff;">
+                                <tr>
+                                    <th>Tiêu chí</th>
+                                    <th>Prompt Cơ bản</th>
+                                    <th>Prompt Cải tiến</th>
+                                    <th>Prompt Nâng cao</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nhận dạng AI</td>
+                                    <td>Máy đọc Wikipedia, khô khan.</td>
+                                    <td>Gia sư liệt kê ý chính.</td>
+                                    <td>Giảng viên ĐH truyền cảm hứng, thấu hiểu tư duy kỹ sư.</td>
+                                </tr>
+                                <tr>
+                                    <td>Mô hình tư duy</td>
+                                    <td>Tuyến tính, liệt kê dàn trải công thức.</td>
+                                    <td>Dọc, có cấu trúc nhưng thiếu kết nối hình học.</td>
+                                    <td>Xoáy ốc trực quan: Từ cắt khoai tây (ẩn dụ) đến hệ thống hóa (bảng biểu).</td>
+                                </tr>
+                                <tr>
+                                    <td>Rào cản thuật ngữ</td>
+                                    <td>Ném trực tiếp các khái niệm Jacobian mà không giải thích.</td>
+                                    <td>Trình bày rõ ràng hơn nhưng vẫn hàn lâm.</td>
+                                    <td>Hệ thống hóa Jacobian như một "hệ số bù đắp không gian" khi chuyển đổi.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4 style="color: #2c98f0;">Tác vụ 2: Lập trình hệ thống</h4>
+                    <p><strong>Prompt Cơ bản</strong></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image10.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image11.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+                    
+                    <img src="media1/image12.png" alt="Kết quả Prompt Cải tiến Tác vụ 1" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    
+                    <p><strong>Prompt Cải tiến</strong></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image13.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image14.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image15.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image16.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+                    <p><strong>Prompt Nâng cao</strong></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image17.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image18.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image19.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image20.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+
+                    <h5 style="color: #333; font-weight: bold; margin-top: 10px; margin-bottom: 15px; text-transform: uppercase;">Bảng so sánh kết quả:</h5>
+                    <div class="table-responsive" style="margin-top: 20px; margin-bottom: 40px;">
+                        <table class="table table-bordered table-striped" style="background: #fff;">
+                            <thead style="background-color: #2c98f0; color: #fff;">
+                                <tr>
+                                    <th>Tiêu chí</th>
+                                    <th>Prompt Cơ bản</th>
+                                    <th>Prompt Cải tiến</th>
+                                    <th>Prompt Nâng cao</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nhận dạng AI</td>
+                                    <td>Trang manpage của Linux, rất khó đọc.</td>
+                                    <td>Hướng dẫn lập trình tiêu chuẩn.</td>
+                                    <td>Senior Mentor thực chiến, chỉ thẳng vào những lỗi chết người (Crash).</td>
+                                </tr>
+                                <tr>
+                                    <td>Mức độ lưu trữ</td>
+                                    <td>Quên ngay sau khi đọc.</td>
+                                    <td>Nhớ được cú pháp hàm pthread_create.</td>
+                                    <td>Ghi sâu vào bộ nhớ nhờ câu chuyện "đầu bếp giành dao" (Race condition).</td>
+                                </tr>
+                                <tr>
+                                    <td>Tính ứng dụng</td>
+                                    <td>Lý thuyết suông.</td>
+                                    <td>Code chạy được nhưng chưa an toàn.</td>
+                                    <td>Code kèm theo cơ chế bảo vệ Mutex – chuẩn tư duy hệ thống.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4 style="color: #2c98f0;">Tác vụ 3: Tư tưởng Hồ Chí Minh</h4>
+                    <p><strong>Prompt Cơ bản</strong></p>
+                    <img src="media1/image21.png" alt="Kết quả Prompt Cơ bản Tác vụ 3" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image22.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image23.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+                    <p><strong>Prompt Cải tiến</strong></p>
+                    <img src="media1/image24.png" alt="Kết quả Prompt Cải tiến Tác vụ 3" style="width: 100%; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px;">
+
+                    <p><strong>Prompt Nâng cao</strong></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="media1/image25.png" alt="Ảnh 1" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <img src="media1/image26.png" alt="Ảnh 2" style="max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px 0;">
+                        </div>
+                    </div>
+
+                    <h5 style="color: #333; font-weight: bold; margin-top: 10px; margin-bottom: 15px; text-transform: uppercase;">Bảng so sánh kết quả:</h5>
+                    <div class="table-responsive" style="margin-top: 20px; margin-bottom: 40px;">
+                        <table class="table table-bordered table-striped" style="background: #fff;">
+                            <thead style="background-color: #2c98f0; color: #fff;">
+                                <tr>
+                                    <th>Tiêu chí</th>
+                                    <th>Prompt Cơ bản</th>
+                                    <th>Prompt Cải tiến</th>
+                                    <th>Prompt Nâng cao</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chất lượng câu hỏi</td>
+                                    <td>Mức độ Nhớ (hỏi năm sinh, tác phẩm).</td>
+                                    <td>Mức độ Hiểu, phương án nhiễu ngớ ngẩn.</td>
+                                    <td>Mức độ Phân tích/Đánh giá, phương án nhiễu gài bẫy logic rất sâu.</td>
+                                </tr>
+                                <tr>
+                                    <td>Giá trị học tập</td>
+                                    <td>Chỉ dùng để kiểm tra trí nhớ.</td>
+                                    <td>Ôn tập tổng quan.</td>
+                                    <td>Ép sinh viên phải tư duy phản biện, loại bỏ hoàn toàn tư duy học vẹt.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 style="color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">4. Phân tích hiệu quả Prompt</h3>
+                    <p>Sự khác biệt giữa Prompt Cơ bản và Nâng cao dựa trên các nguyên lý khoa học dữ liệu ngầm sau:</p>
+                    <ul style="list-style-type: square;">
+                        <li><strong>Khống chế không gian tìm kiếm (Latent Space Constraint):</strong> Khi định hình vai trò cụ thể ("Giảng viên UET", "Senior System Engineer"), ta đang thu hẹp vùng khai thác dữ liệu, ép AI loại bỏ ngôn ngữ từ điển và sử dụng lập luận của chuyên gia thực thụ.</li>
+                        <li><strong>Kích hoạt Chuỗi tư duy (Chain-of-Thought - CoT):</strong> Trong tác vụ Pthread, việc buộc AI phải suy nghĩ theo các bước (Ẩn dụ -> Code -> Cảnh báo lỗi) giúp giảm thiểu hiện tượng ảo giác (hallucination) và tạo ra một lộ trình tiếp thu tự nhiên nhất cho não bộ.</li>
+                        <li><strong>Tái cấu trúc vòng lặp tương tác (Interaction Loop):</strong> Ở tác vụ Tư tưởng HCM, thay vì bảo AI "cung cấp thông tin", prompt yêu cầu AI "tạo bẫy và giải thích tại sao sai". Điều này chuyển AI từ một công cụ tra cứu thành một cỗ máy chất vấn logic, ép người học kích hoạt Active Recall.</li>
+                    </ul>
+
+                    <h3 style="color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px;">5. Tổng hợp nguyên tắc và mẹo viết Prompt (Khung C.A.R.E)</h3>
+                    <p>Để kiểm soát và tối ưu hóa các Mô hình Ngôn ngữ Lớn trong học tập, cần tuân thủ Chiến lược 4 Cột Trụ (C.A.R.E):</p>
+                    
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-md-6" style="margin-bottom: 15px;">
+                            <div style="background: #fff; padding: 20px; border-radius: 8px; border-top: 4px solid #f0ad4e; box-shadow: 0 2px 8px rgba(0,0,0,0.05); height: 100%;">
+                                <h4 style="color: #f0ad4e; margin-top: 0;"><strong>C</strong> - Context (Bối cảnh nền tảng)</h4>
+                                <p style="margin-bottom: 0;">Khai báo rõ bản thân là ai (VD: Sinh viên ngành Kỹ thuật máy tính cần hiểu Code C/Linux) để AI điều chỉnh độ sâu kỹ thuật phù hợp.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="margin-bottom: 15px;">
+                            <div style="background: #fff; padding: 20px; border-radius: 8px; border-top: 4px solid #5cb85c; box-shadow: 0 2px 8px rgba(0,0,0,0.05); height: 100%;">
+                                <h4 style="color: #5cb85c; margin-top: 0;"><strong>A</strong> - Action (Hành động đặc hiệu)</h4>
+                                <p style="margin-bottom: 0;">Dùng động từ mạnh. Đừng dùng "Kể cho tôi về...". Hãy dùng "Lập bảng so sánh", "Chỉ ra lỗi sai phổ biến", "Phân tích bẫy logic".</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="margin-bottom: 15px;">
+                            <div style="background: #fff; padding: 20px; border-radius: 8px; border-top: 4px solid #d9534f; box-shadow: 0 2px 8px rgba(0,0,0,0.05); height: 100%;">
+                                <h4 style="color: #d9534f; margin-top: 0;"><strong>R</strong> - Role (Nhân dạng chuyên gia)</h4>
+                                <p style="margin-bottom: 0;">Luôn gán cho AI một vai trò cụ thể để định hình văn phong (VD: Giáo sư toán, Kỹ sư hệ thống, Người ra đề khó tính).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="margin-bottom: 15px;">
+                            <div style="background: #fff; padding: 20px; border-radius: 8px; border-top: 4px solid #5bc0de; box-shadow: 0 2px 8px rgba(0,0,0,0.05); height: 100%;">
+                                <h4 style="color: #5bc0de; margin-top: 0;"><strong>E</strong> - Expectations (Định dạng kỳ vọng)</h4>
+                                <p style="margin-bottom: 0;">Khống chế đầu ra bằng cách yêu cầu định dạng rõ ràng như Markdown, bảng biểu, sử dụng LaTeX cho toán học, hoặc code phải có comment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+</body>
+</html>

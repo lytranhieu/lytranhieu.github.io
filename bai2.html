@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bài 2: Báo cáo nghiên cứu tài liệu - Lý Trần Hiếu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		body { background-color: #f4f4f4; }
+		.project-detail-container {
+			background-color: #fff;
+			padding: 40px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			border-radius: 8px;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+		}
+		.btn-back { margin-bottom: 20px; display: inline-block; }
+		
+		/* Fix font chữ tiếng Việt */
+		h1, h2, h3, h4, h5, h6, th {
+			font-family: 'Quicksand', Arial, sans-serif !important;
+			font-weight: 700;
+		}
+		
+		/* Style riêng cho bảng đánh giá */
+		.evaluation-table th {
+			background-color: #2c98f0;
+			color: white;
+			text-align: center;
+			vertical-align: middle !important;
+		}
+		.evaluation-table td {
+			vertical-align: middle !important;
+			font-size: 15px;
+		}
+		.rating-badge {
+			display: inline-block;
+			padding: 5px 10px;
+			border-radius: 20px;
+			font-weight: bold;
+			color: #fff;
+		}
+		.rating-5 { background-color: #5cb85c; }
+		.rating-45 { background-color: #f0ad4e; }
+		.rating-4 { background-color: #5bc0de; }
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 project-detail-container">
+				
+				<a href="index.html#work" class="btn btn-primary btn-back">⬅ Quay về trang dự án</a>
+
+				<h2 style="color: #2c98f0; text-align: center; margin-bottom: 30px; text-transform: uppercase;">Tìm kiếm và đánh giá thông tin học thuật</h2>
+				<hr>
+
+				<div class="project-content" style="font-size: 16px; line-height: 1.8; color: #333;">
+					
+					<h3 style="color: #2c98f0; font-weight: bold; margin-bottom: 10px;">I. Chủ đề nghiên cứu</h3>
+					<p style="font-size: 18px; font-weight: bold; margin-bottom: 30px; color: #000; padding-left: 20px;">Bảo mật phần cứng (Hardware Security) trong thiết kế vi mạch IoT</p>
+					
+					<h3 style="color: #2c98f0; font-weight: bold; margin-bottom: 15px;">II. Danh mục tài liệu tham khảo</h3>
+					<ul style="margin-bottom: 40px; line-height: 2; list-style-type: square;">
+						<li>CSDL Thư viện UET: Giáo trình thiết kế vi mạch số nâng cao.</li>
+						<li>IEEE Xplore: Hardware Security: A Survey of Recent Advances and Future Challenges (2023).</li>
+						<li>ACM Digital Library: PUF-Based Authentication Protocols for Low-Resource IoT Devices (2022).</li>
+						<li>MDPI Electronics: Hardware Root of Trust: Implementation and Security Analysis (2024).</li>
+						<li>Springer Journal: Side-Channel Attacks and Countermeasures in Microchip Design (2021).</li>
+						<li>IEEE Transactions on VLSI Systems: Energy-Efficient Hardware Security Primitives for IoT (2022).</li>
+						<li>Journal of Cryptographic Engineering: Physical Unclonable Functions for Secure IoT: A Review (2023).</li>
+						<li>ScienceDirect: Hardware Trojan Detection: Emerging Trends and Countermeasures (2022).</li>
+						<li>Sách: Hardware Security: A Hands-on Learning Approach (Bhunia & Tehranipoor, 2018).</li>
+						<li>Sách: The Hardware Trojan Horse: Concept, Design and Defense (Springer, 2020).</li>
+						<li>Nguồn mở: NIST Special Publication 800-193: Platform Firmware Resiliency Guidelines.</li>
+						<li>Nguồn mở: OWASP IoT Security Verification Standard (ISVS).</li>
+					</ul>
+
+					<h3 style="color: #2c98f0; font-weight: bold; margin-bottom: 20px;">III. Bảng tổng hợp và đánh giá độ tin cậy chi tiết</h3>
+
+					<div class="table-responsive" style="margin-top: 10px; margin-bottom: 40px;">
+						<table class="table table-bordered table-striped table-hover evaluation-table" style="background: #fff;">
+							<thead>
+								<tr>
+									<th style="width: 5%;">STT</th>
+									<th style="width: 12%;">Loại nguồn</th>
+									<th style="width: 25%;">Tên tài liệu / Tác giả</th>
+									<th style="width: 25%;">Ưu điểm</th>
+									<th style="width: 25%;">Nhược điểm</th>
+									<th style="width: 8%;">Xếp hạng</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="text-center"><strong>1</strong></td>
+									<td>CSDL Thư viện UET</td>
+									<td><em>Giáo trình thiết kế vi mạch số nâng cao.</em></td>
+									<td>Sát với chương trình đào tạo tại trường, ngôn ngữ Tiếng Việt dễ hiểu.</td>
+									<td>Tính cập nhật công nghệ mới chậm hơn so với báo quốc tế.</td>
+									<td class="text-center"><span class="rating-badge rating-4">4/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>2</strong></td>
+									<td>Tạp chí (IEEE)</td>
+									<td><em>Hardware Security: A Survey of Recent Advances and Future Challenges (2023).</em></td>
+									<td>Cung cấp cái nhìn toàn cảnh về các xu hướng; có hơn 500 lượt trích dẫn; độ tin cậy học thuật cao nhất.</td>
+									<td>Dung lượng kiến thức rất lớn, đòi hỏi người đọc có nền tảng kiến trúc máy tính tốt.</td>
+									<td class="text-center"><span class="rating-badge rating-5">5/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>3</strong></td>
+									<td>Tạp chí (ACM)</td>
+									<td><em>PUF-Based Authentication Protocols for Low-Resource IoT Devices (2022).</em></td>
+									<td>Phân tích sâu về thuật toán PUF; phương pháp nghiên cứu thực nghiệm trên FPGA rất chặt chẽ.</td>
+									<td>Tập trung nhiều vào giao thức, ít đề cập đến quy trình vật lý khi chế tạo chip tại xưởng (foundry).</td>
+									<td class="text-center"><span class="rating-badge rating-45">4.5/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>4</strong></td>
+									<td>Tạp chí (MDPI)</td>
+									<td><em>Hardware Root of Trust: Implementation and Security Analysis (2024).</em></td>
+									<td>Tính cập nhật rất cao; đề cập đến các lỗ hổng bảo mật mới nhất trên các dòng chip IoT hiện đại.</td>
+									<td>Quy trình bình duyệt nhanh nên cần đối chiếu số liệu thực nghiệm với các nguồn của IEEE.</td>
+									<td class="text-center"><span class="rating-badge rating-4">4/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>5</strong></td>
+									<td>Tạp chí (Springer)</td>
+									<td><em>Side-Channel Attacks and Countermeasures in Microchip Design (2021).</em></td>
+									<td>Chuyên sâu về các kỹ thuật tấn công kênh kề (đo dòng điện, bức xạ điện từ) để lấy cắp khóa mật mã.</td>
+									<td>Các giải pháp phòng chống thường làm tăng diện tích chip (area overhead) đáng kể.</td>
+									<td class="text-center"><span class="rating-badge rating-45">4.5/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>6</strong></td>
+									<td>Tạp chí (VLSI)</td>
+									<td><em>Energy-Efficient Hardware Security Primitives for IoT (2022).</em></td>
+									<td>Phân tích sâu ở mức cổng logic (Gate-level) và thiết kế vi mạch cụ thể; tối ưu giữa bảo mật và điện năng.</td>
+									<td>Yêu cầu kiến thức cực sâu về Verilog/VHDL và thiết kế CMOS để hiểu các sơ đồ mạch.</td>
+									<td class="text-center"><span class="rating-badge rating-5">5/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>7</strong></td>
+									<td>Tạp chí (JCE)</td>
+									<td><em>Physical Unclonable Functions for Secure IoT: A Review (2023).</em></td>
+									<td>Phân tích chi tiết về độ bền và tính ngẫu nhiên của PUF trên silicon.</td>
+									<td>Thiên về toán học mật mã, khó tiếp cận về mặt vật lý.</td>
+									<td class="text-center"><span class="rating-badge rating-45">4.5/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>8</strong></td>
+									<td>Tạp chí (Science Direct)</td>
+									<td><em>Hardware Trojan Detection: Emerging Trends and Countermeasures (2022).</em></td>
+									<td>Cung cấp các kỹ thuật phát hiện "Trojan phần cứng" trong chip.</td>
+									<td>Một số giải pháp chỉ mang tính lý thuyết, khó triển khai.</td>
+									<td class="text-center"><span class="rating-badge rating-45">4.5/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>9</strong></td>
+									<td>Sách</td>
+									<td><em>Hardware Security: A Hands-on Learning Approach (Bhunia & Tehranipoor, 2018).</em></td>
+									<td>Giáo trình chuẩn; giải thích từ cơ bản đến nâng cao; cực kỳ phù hợp để xây dựng nền tảng lý thuyết.</td>
+									<td>Một số công cụ EDA (Electronic Design Automation) trong ví dụ có thể hơi cũ so với thực tế.</td>
+									<td class="text-center"><span class="rating-badge rating-5">5/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>10</strong></td>
+									<td>Sách</td>
+									<td><em>The Hardware Trojan Horse: Concept, Design and Defense (Springer, 2020).</em></td>
+									<td>Tập trung duy nhất vào mã độc phần cứng; phân tích cực sâu.</td>
+									<td>Nội dung hẹp, chỉ phục vụ một mảng trong bảo mật.</td>
+									<td class="text-center"><span class="rating-badge rating-4">4/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>11</strong></td>
+									<td>Nguồn mở (NIST)</td>
+									<td><em>Special Publication 800-193: Platform Firmware Resiliency Guidelines.</em></td>
+									<td>Tiêu chuẩn quốc tế từ cơ quan uy tín; hướng dẫn cụ thể cách xây dựng "gốc tin cậy" (Root of Trust).</td>
+									<td>Văn phong kỹ thuật khô khan; thiếu các ví dụ mã nguồn minh họa trực quan cho sinh viên.</td>
+									<td class="text-center"><span class="rating-badge rating-45">4.5/5</span></td>
+								</tr>
+								<tr>
+									<td class="text-center"><strong>12</strong></td>
+									<td>Nguồn mở (OWASP)</td>
+									<td><em>IoT Security Verification Standard (ISVS).</em></td>
+									<td>Rất thực tế cho việc kiểm thử và đánh giá an toàn thiết bị IoT.</td>
+									<td>Độ tin cậy học thuật thấp hơn bài báo khoa học.</td>
+									<td class="text-center"><span class="rating-badge rating-4">4/5</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+</body>
+</html>
